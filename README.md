@@ -7,25 +7,25 @@ Compare the following tools for Aalto IT servers.
     - NeatNX
 - X2GO
 
-## Scenario
+# Scenario
 1. Mac/Windows/Linux users want to work on a linux server where there are huge sets of data, Matlab and powerful computation power.
 
 2. Mac/Windows/Linux users connect to a Windows server and use MS Word/Exel/Powerpoint/Visual Studio.
 
-## Technologies
+# Technologies
 
-### 1. [NoMachine (NX)](https://en.wikipedia.org/wiki/NX_technology)
+## 1. [NoMachine (NX)](https://en.wikipedia.org/wiki/NX_technology)
 [*We recommend NoMachine for remote usage of graphical interfaces instead of X11 connections. It often speeds up the graphical response even 10 fold with respect to the normal X11 connections.*](https://research.csc.fi/csc-guide-connecting-the-servers-of-csc)
 
-#### License
+### License
 Free & Enterprise
 
-#### Platform support
+### Platform support
 | Host | Client |
 | ------------- | ------------- |
 | Windows, Mac, Linux and Linux ARM | Windows, Mac OS X, iOS, Android, Linux, Linux ARM and HTML/JavaScript permitting access|
 
-#### Features
+### Features
 - sharing network devices
 - session recording
 - file transfer
@@ -35,27 +35,22 @@ Free & Enterprise
 - failover functionality **(enterprise-only)**
 - run multiple virtual Linux instances on the same machine **(enterprise-only)**
 
-#### Graphics
+### Graphics
 Uses VirtualGL, which means high-end OpenGL-based X applications and 3-D CAD programs are rendered and displayed with the best possible accuracy. VirtualGL is an open source program that redirects the 3D rendering commands from Unix and Linux OpenGL applications to 3D accelerator hardware in a dedicated server and displays the rendered output interactively to a thin client located elsewhere on the network.
 
-#### Pros
-- clipboard is shared by default
-
-#### Cons
-- Some shells doesn't authenticate your credential. Use [taito-shell](https://research.csc.fi/taito-shell-user-guide)
 
 
-### 2. [X2GO](https://wiki.x2go.org/doku.php/doc:newtox2go)
+## 2. [X2GO](https://wiki.x2go.org/doku.php/doc:newtox2go)
 
-#### License
+### License
 Free
 
-#### Platform support
+### Platform support
 | Host | Client |
 | ------------- | ------------- |
 | Linux| Linux, PC, Mac |
 
-#### Features
+### Features
 - Session
 - Desktop sharing
 - **Disconnect and reconnect to a session, even from another client** (Security?)
@@ -67,14 +62,14 @@ Free
 - Remote support possible via [Desktop Sharing](https://wiki.x2go.org/doku.php/doc:usage:desktop-sharing)
 - The ability to access single applications by specifying the name of the desired executable in the client configuration or selecting one of the pre-defined common applications
 
-#### Graphics
+### Graphics
 No Machine NX3 under the hood
 
-#### Network
+### Network
 - SSH
 
 
-#### Installation
+### Installation
 
 
 
