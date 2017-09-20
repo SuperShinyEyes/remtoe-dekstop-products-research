@@ -11,6 +11,9 @@ There are two servers: Taito & Sisu
 * Taito(taito.csc.fi): 16 cabinet HP cluster
 * Sisu (sisu.csc.fi): Massively Parallel Processor (MPP) supercomputer produced by Cray Inc., belonging to the XC40 family
 
+### Matlab
+[Setup](https://research.csc.fi/-/matlab)
+
 ### Pros
 - clipboard is shared by default
 
