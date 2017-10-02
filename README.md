@@ -1,4 +1,7 @@
 # Graphical SSH Tool(Remote Control) Analysis
+
+https://en.wikipedia.org/wiki/Comparison_of_remote_desktop_software
+
 Compare the following tools for Aalto IT servers.
 - NX
     - NoMachine(on [CSC](https://www.csc.fi/))
@@ -71,7 +74,13 @@ No Machine NX3 under the hood
 
 ### Installation
 
+## 3. TigerVNC
 
+### Security
+TigerVNC uses TLS encryption by default. While the application encrypts traffic, it cannot verify the identity of the server. However, TigerVNC supports various other encryption schemes, such as X509Vnc, that do allow this.
+Furthermore, TigerVNC offers users controls to manually tweak the encoding and colour level and a couple of other parameters depending on the available bandwidth. You can also use it to create view-only sessions and run a full-screen session on the guest.
+
+## 4. RealVNC
 
 
 setxkbmap us
