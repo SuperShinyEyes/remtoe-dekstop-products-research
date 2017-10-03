@@ -51,6 +51,20 @@ There are two servers: Taito & Sisu
 * Taito(taito.csc.fi): 16 cabinet HP cluster
 * Sisu (sisu.csc.fi): Massively Parallel Processor (MPP) supercomputer produced by Cray Inc., belonging to the XC40 family
 
+Commands on client side:
+```bash
+/usr/NX/bin/nxplayer
+```
+
+### Usability
+| Category | Review |
+| ------------- | ------------- |
+| Coding | Ok. Very smooth on Vim/RStudio  |
+| Web surfing| Unusable. Resources load fast but UI latency(scrolling) is terrible.|
+| Youtube | Unusable. It feels like 10FPS. Sound is forwarded without a lag. |
+|Stability| Very good. Clear UI notification if network is unstable. Session recovery is as good as others.|
+|Num of session| One session for free version. NXKajaani is enterprise still allows only one session per user.|
+|Key forwarding| `alt` + `tab` can be sent over to sessions when in fullscreen mode. To toggle fullscreen, `ctrl`+`alt`+`0`|
 
 ### Graphical Usability
 #### Video
@@ -79,8 +93,20 @@ There are two servers: Taito & Sisu
 - []()
 - []()
 
+## 2. NoMachine Free on Lubuntu Desktop
 
-## 2. X2GO
+### Running client
+The free version does not support SSH connection. I couldn't figure out to connect using only NX. You can tunnel the NX protocol in an SSH connection:
+```bash
+ssh -L 4000:localhost:4000 -N -f -l seyoung 130.233.195.77
+```
+Then edit the NXClient settings as:
+![Screen Shot 2017-10-03 at 17.18.39](/images/Screen Shot 2017-10-03 at 17.18.39.png)
+
+### Youtube test on TigerVNC session
+[![Screen Shot 2017-10-03 at 20.25.24](/images/Screen Shot 2017-10-03 at 20.25.24.png)](https://youtu.be/GZjPTrmuXII)
+
+## 3. X2GO
 X2GO uses X.Org(in Mac, XQuartz) as an X11 vendor. Even though X2GO uses X as its X11, it is still much faster than bare-bones X-forwarding using `ssh -Y`.
 
 Commands on server side:
@@ -96,12 +122,15 @@ service x2goserver stop
 | Coding | Ok. Very smooth on Vim. Pretty smooth on PyCharm. Huge UI latency on Jupyter Notebook |
 | Web surfing| Unusable. Resources load fast but UI latency(scrolling) is terrible.|
 | Youtube | Unusable. It feels like 10FPS. Sound is forwarded without a lag. |
-|Stability| Poor. When the Internet connection is stable, it is stable. However, when the connection is lost even for two seconds, the session is detached.|
+|Stability| Very good on Linux client poor on Mac. On Linux, the session recovery is as good as others. On Mac, session recovery doesn't happen; the session is detached.|
+|Num of session| Multi sessions supported automatically. However, on Macs, client can run only one session at a time.|
+|Key forwarding| `alt` + `tab` can be sent over to sessions when in fullscreen mode. To toggle fullscreen, `ctrl`+`alt`+`f`|
+
 
 ### Pros
 
 ### Cons
-
+https://wiki.x2go.org/doku.php/wiki:development:roadmap
 
 ## 3. TigerVNC
 TigerVNC is its own X11 vendor.
@@ -118,7 +147,7 @@ vncserver       # Launch
 
 #### Client
 ```bash
-# 1. Establish an SSH session
+# 1. Establish an SSH session. Port number is 5900 + (#display)
 ssh -L 5901:127.0.0.1:5901 -N -f -l host-username host-ip
 
 # 2. Launch TigerVNC Viewer
@@ -140,6 +169,8 @@ ssh -L 5901:127.0.0.1:5901 -N -f -l host-username host-ip
 | Web surfing| Good. Can browse non-video websites pretty fast. Scrolling is little laggy but still very usable.|
 | Youtube | OK. HD & 60FPS is possible when you are not viewing fullscreen. At fullscreen, frame rate is under 28fps. Felt like 22fps. **For sound, one needs to setup a separate sound forwarding server** such as PulseAudio|
 |Stability| Good. TigerVNC Viewer freezes when the Internet connection is interrupted. However the session is resumed after the network became stable. For instance when I plugged my iPhone off/in the USB there was a short pause but the session was resumed automatically. |
+|Num of session| Multi sessions supported. **Needs manual work on both server and client.** Launch a new session on server and set correct ports on client.|
+|Key forwarding| `alt` + `tab` can be sent over to sessions when in fullscreen mode. To toggle fullscreen, `F8` and click `Fullscreen`|
 
 ### Pros
 
