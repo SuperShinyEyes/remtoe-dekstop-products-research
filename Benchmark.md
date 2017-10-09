@@ -21,14 +21,25 @@
 | Memory | 16 GB 2133 MHz LPDDR3 |
 | OS | macOS 10.12.6 |
 | GPU | Intel Iris Plus Graphics 640 |
--
-    -
-    -
-    -
-    -
 
 #### Windows
+| Features |  |
+| ------------- | ------------- |
+| Model| HP ZBook 15 G3 |
+| Processor | 2.7GHz (8 CPUs) Intel i7 |
+| Memory | 16GB |
+| OS | Windows 10 64bit |
+| GPU | Intel HD Graphics 530 |
+
+
 #### Linux
+| Features |  |
+| ------------- | ------------- |
+| Model| HP ZBook 15 G2 |
+| Processor | 2.8GHz (8 CPUs) Intel i7-4810MQ |
+| Memory | 16GB |
+| OS | Ubuntu 16.04.LTS 64bit |
+| GPU | NVIDIA Quadro K2100M |
 ### Network
 | Elisa 4G on iPhone SE |  |
 | ------------- | ------------- |
@@ -94,6 +105,10 @@ Commands on client side:
 - []()
 
 ## 2. NoMachine Free on Lubuntu Desktop
+### Running server
+```bash
+sudo /usr/NX/bin/nxserver --restart
+```
 
 ### Running client
 The free version does not support SSH connection. I couldn't figure out to connect using only NX. You can tunnel the NX protocol in an SSH connection:
