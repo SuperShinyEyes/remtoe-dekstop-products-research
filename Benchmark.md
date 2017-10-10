@@ -83,7 +83,7 @@ Commands on client side:
 ](https://youtu.be/9qn_G0bI9jA "taito test")
 
 #### R Plot
-![R plot](/images/Screen Shot 2017-09-25 at 15.14.19.png)
+![R plot](/images/R-plot.png)
 
 ### Matlab
 [Setup](https://research.csc.fi/-/matlab)
@@ -116,10 +116,10 @@ The free version does not support SSH connection. I couldn't figure out to conne
 ssh -L 4000:localhost:4000 -N -f -l seyoung 130.233.195.77
 ```
 Then edit the NXClient settings as:
-![Screen Shot 2017-10-03 at 17.18.39](/images/Screen Shot 2017-10-03 at 17.18.39.png)
+![NXClient settings](/images/NXClient-settings.png)
 
 ### Youtube test on TigerVNC session
-[![Screen Shot 2017-10-03 at 20.25.24](/images/Screen Shot 2017-10-03 at 20.25.24.png)](https://youtu.be/GZjPTrmuXII)
+[![TigerVNC-youtube](/images/TigerVNC-youtube.png)](https://youtu.be/GZjPTrmuXII)
 
 ## 3. X2GO
 X2GO uses X.Org(in Mac, XQuartz) as an X11 vendor. Even though X2GO uses X as its X11, it is still much faster than bare-bones X-forwarding using `ssh -Y`.
