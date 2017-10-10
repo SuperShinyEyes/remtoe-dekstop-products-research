@@ -1,5 +1,7 @@
 # Graphical SSH Tool Benchmark
 
+[![spreadsheet](/images/spreadsheet.png)](https://docs.google.com/spreadsheets/d/1gW0xGUT9XReVJP1y4DVkEewdKu7vkS0eqPWjN_lQ8C0/edit?usp=sharing)
+
 ## Test Environment
 ### Host
 #### Lubuntu desktop for TigerVNC and X2GO
@@ -248,3 +250,4 @@ Good. Almost as good as X2Go
 
 ### Cons
 - Cannot save sessions
+- Miserably slow...
