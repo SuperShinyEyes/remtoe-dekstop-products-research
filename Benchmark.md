@@ -79,8 +79,8 @@ Commands on client side:
 
 ### Graphical Usability
 #### Video
-[![CSC Taito shell video test](/images/Screen Shot 2017-09-25 at 10.46.56.png)
-](https://youtu.be/9qn_G0bI9jA)
+[![CSC Taito shell video test](/images/CSC-Taito-shell-video-test.png)
+](https://youtu.be/9qn_G0bI9jA "taito test")
 
 #### R Plot
 ![R plot](/images/Screen Shot 2017-09-25 at 15.14.19.png)
