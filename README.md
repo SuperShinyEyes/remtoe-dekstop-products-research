@@ -1,7 +1,7 @@
 # Remote desktop products research for Aalto University
 Find the most optimal [remote desktop products](https://en.wikipedia.org/wiki/Comparison_of_remote_desktop_software) for Aalto University IT services.
 
-* Target users: researchers and students
+- Target users: researchers and students
 - Target servers: Linux servers
 - Target clients: Linux/Mac/Windows
 
@@ -19,7 +19,7 @@ Compare the following tools for Aalto IT servers.
 - X2GO
 - TigerVNC
 
-#### 1. [NoMachine (NX)](https://en.wikipedia.org/wiki/NX_technology)
+### 1. [NoMachine (NX)](https://en.wikipedia.org/wiki/NX_technology)
 [*We recommend NoMachine for remote usage of graphical interfaces instead of X11 connections. It often speeds up the graphical response even 10 fold with respect to the normal X11 connections.*](https://research.csc.fi/csc-guide-connecting-the-servers-of-csc)
 
 #### License
