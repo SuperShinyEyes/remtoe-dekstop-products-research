@@ -58,6 +58,12 @@ vncserver -SecurityTypes=TLSPlain -PlainUsers=$USER -pam_service login -desktop 
 ```
 If you start a server this way then you will need to give your login credential which you used to login to the machine.
 
+### How Aalto authentication works
+```
+sshd ---> pam ---> sssd ---> AD 
+```
+
+
 ### Reference
 - [PAM](https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/6/html/Managing_Smart_Cards/Pluggable_Authentication_Modules.html)
 - [Kerberos](https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/6/html/Managing_Smart_Cards/Using_Kerberos.html)
