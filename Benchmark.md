@@ -155,11 +155,27 @@ TigerVNC is its own X11 vendor.
 ### Installation
 - Download package @ https://github.com/TigerVNC/tigervnc/releases
 - Extract and move the files to `/usr/bin/`
+```bash
+wget https://bintray.com/tigervnc/stable/download_file?file_path=tigervnc-1.8.0.x86_64.tar.gz
+tar -xvzf tiger-folder
+sudo cp tiger-folder /usr/bin/
+
+# Run
+vncserver       # Launch
+# or
+/usr/bin/tigervnc/usr/bin/vncserver
+
+# In Aalto machine it will create files at
+
+```
 
 ### Running
 #### Host
 ```bash
 vncserver       # Launch
+
+# or
+/usr/bin/tigervnc/usr/bin/vncserver
 ```
 
 #### Client
