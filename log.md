@@ -66,9 +66,17 @@ If you start a server this way then you will need to give your login credential 
    
 ## Encryption
 Simo tested with Wireshark. If **SecurityTypes** is `None` then everything, including keystrokes, mouse positions and etc., will be plainly transferred. However, even the default type is secured.
-```bash
-```
 
+
+## Auto port number allocation(Not resolved)
+### Problem: find an intuitive way to allocate port numbers for users
+By default VNCServer uses ports starting from 5901.(The starting state is 5900 and you add a display number to it.)
+
+We tried:
+```bash
+vncserver :$UID -SecurityTypes=TLSPlain -PlainUsers=$USER -pam_service login -desktop $HOSTNAME
+```
+`$UID` is an unique ID for every user. It didn't work unfortunately because `$UID`s are seven digits which seemed to be too large for a port number.
 
 ## Problem
 ```bash

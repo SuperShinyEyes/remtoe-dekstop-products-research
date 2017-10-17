@@ -19,7 +19,10 @@ ps -ef | grep ssh
 
 ssh git@admin.cs.hut.fi
 
-
+# Following command doesn't need a separate SSH tunneling
+# localhost:3 is the server host at port 5903.
+# cs-208 is the HOST in .ssh/config
+./vncviewer localhost:3 -via cs-208
 ```
 
 
